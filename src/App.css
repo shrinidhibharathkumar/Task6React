@@ -1,0 +1,193 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation menu styles */
+.menu {
+  display: none;
+  background: #333;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.bar {
+  background-color: #fff;
+  height: 4px;
+  width: 30px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.open .bar:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Section title styles */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #63a69f;
+}
+
+/* Section styles */
+section {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home section styles */
+.home-section {
+  background-color: #f0f0f0;
+}
+
+/* About section styles */
+.about-section {
+  background-color: #63a69f;
+  color: #fff;
+}
+
+/* Skills section styles */
+.skills-section {
+  background-color: #00f5a0;
+  color: #fff;
+}
+
+/* Experience section styles */
+.experience-section {
+  background-color: #f2b880;
+  color: #000;
+}
+
+/* Contact section styles */
+.contact-section {
+  background-color: #ff8c94;
+  color: #fff;
+}
+
+/* Profile image styles */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid #63a69f;
+}
+
+/* Additional styles for active section */
+section {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove list-style dots in the Skills section */
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  margin-bottom: 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-button {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu.open .navbar {
+    display: flex;
+  }
+}
+/* Additional styles for the welcome message */
+.welcome-message {
+  font-size: 24px;
+  color: #000; /* Set the text color to black */
+  max-width: 600px;
+}
+/* Additional styles for dark text */
+.dark-text {
+  color: #000;
+}
+/* Additional styles for brown text */
+.brown-text {
+  color: brown;
+}
+/* Additional styles for black text */
+.black-text {
+  color: #000;
+}
